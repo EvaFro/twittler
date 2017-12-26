@@ -1,0 +1,22 @@
+body {
+  background: #e0e2e6;
+  width: 750px;
+  margin: 0 auto;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #0ba257;
+}
+
+h1{
+	color:#167984;
+	font-weight: bold;
+}
+
+.username{
+	font-wight: bold;
+	color: #74607d;
+}
+
+.username:hover{
+	text-decoration: underline;
+	color: #baa0c7;
+}
