@@ -10,6 +10,7 @@ while(index >= 0){
   var tweet = streams.home[index];
   var $tweet = $('<div></div>');
   
+  // add user info
   var $user = $('<a></a>');
   $user.attr({'href': '#', 'data-user': tweet.user, 'class': 'username'});
   $user.text('@' + tweet.user)
@@ -18,10 +19,10 @@ while(index >= 0){
   $tweet.append(': ' + tweet.message);
   
   //Add time stamp to our tweets
-  $tweetTime = $('<span></span>');
+  var $tweetTime = $('<span></span>');
   $tweetTime.addClass('timestamp');
   //make easy to read
-  readableTime = moment(tweet.created_at).fromNow();
+  var readableTime = moment(tweet.created_at).fromNow();
   $tweetTime.text(readableTime);
   $tweetTime.appendTo($tweet);
 	
