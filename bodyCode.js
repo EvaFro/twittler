@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	var $main = $('.main')
-	
 	var $refreshLinkButton = $('<a href="#" class="refreshLinkButton"></a>');
 	$refreshLinkButton.text('New messages');
 	$refreshLinkButton.prependTo($main);
@@ -22,11 +21,13 @@ $(document).ready(function(){
 		
 		if (type === 'Home') {
 		  source = streams.home; 
+		  $("h1").text("Twittler Home");
 		} else if (type) {
 		  source = streams.users[type];
+		  $("h1").append(": @" + type);
 		}
 		
-		var index = streams.home.length - 1;
+		var index = source.length - 1;
 		while(index >= 0){
 		  tweet = source[index];
 		  $tweet = $('<div></div>');
@@ -60,7 +61,6 @@ $(document).ready(function(){
 		});
 	};
 
-	$refreshLinkButton.clone().appendTo($main);
 	
 	//default display
 	displayTweets('Home');
