@@ -21,3 +21,12 @@ h1{
 	text-decoration: underline;
 	color: #74607d;
 }
+
+.tweet {
+  margin: 15px 0;
+}
+
+.timestamp {
+	font-size: 75%;
+	float: right;
+}
