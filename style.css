@@ -1,9 +1,15 @@
 body {
-  background: #0b2d35;
-  width: 750px;
-  margin: 0 auto;
-  font-family: "Lucida Console", Monaco, monospace;
-  color: #baa0c7;
+	background: #0b2d35;
+	width: 1050px;
+	margin: 0 auto;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #baa0c7;
+ }
+
+
+div{
+	border: 2px solid #296273;
+	padding: 20px;
 }
 
 h1{
@@ -24,7 +30,7 @@ h1{
 }
 
 .tweet {
-  margin: 15px 0;
+	margin: 15px 0;
 }
 
 .timestamp {
