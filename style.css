@@ -13,8 +13,9 @@ h1{
 }
 
 .username{
+	text-decoration: none;
 	font-wight: bold;
-	color: #baa0c7;
+	color: #b95be8;
 }
 
 .username:hover{
