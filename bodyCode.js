@@ -9,8 +9,13 @@ var index = streams.home.length - 1;
 while(index >= 0){
   var tweet = streams.home[index];
   var $tweet = $('<div></div>');
-  $tweet.text('@' + tweet.user + ': ' + tweet.message);
-  $tweet.appendTo($tweetFeed);
+  
+  var $user = $('<a></a>');
+  $user.attr({'href': '#', 'data-user': tweet.user, 'class': 'username'});
+  $user.text('@' + tweet.user)
+  $user.appendTo($tweet);
+    
+  $tweet.append(': ' + tweet.message);
   
   //Add time stamp to our tweets
   $tweetTime = $('<span></span>');
